@@ -5,8 +5,8 @@ set -x LIBGL_ALWAYS_INDIRECT 1
 
 set -x PATH $PATH /home/dan/.local/bin
 
-fortune | cowsay | lolcat
-
+set -x XDG_CONFIG_HOME $HOME/.config
+set fish_greeting
 
 # pyenv init
 if command -v pyenv 1>/dev/null 2>&1
@@ -18,3 +18,8 @@ end
 eval /home/dan/anaconda3/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
 
+source $XDG_CONFIG_HOME/fish/alias.fish
+
+if status --is-interactive;
+  source $XDG_CONFIG_HOME/fish/ish.config.fish;
+end
