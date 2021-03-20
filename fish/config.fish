@@ -3,7 +3,9 @@
 set -x DISPLAY (awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0.0
 set -x LIBGL_ALWAYS_INDIRECT 1
 
-set -x PATH $PATH /home/dan/.local/bin
+#set -x PATH $PATH $HOME/.local/bin
+fish_add_path $HOME/.local/bin
+fish_add_path $HOME/.cargo/bin
 
 set -x XDG_CONFIG_HOME $HOME/.config
 set fish_greeting
