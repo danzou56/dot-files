@@ -11,9 +11,9 @@ set -x XDG_CONFIG_HOME $HOME/.config
 set fish_greeting
 
 # pyenv init
-if command -v pyenv 1>/dev/null 2>&1
-  pyenv init - | source
-end
+#if command -v pyenv 1>/dev/null 2>&1
+#  pyenv init - | source
+#end
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
