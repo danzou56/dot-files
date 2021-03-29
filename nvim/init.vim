@@ -12,13 +12,12 @@
   Plug 'lervag/vimtex'
     let g:tex_flavor='latex'
     let g:vimtex_quickfix_mode=0
+    
     let g:vimtex_view_general_viewer='SumatraPDF'
     let g:vimtex_view_general_options = '-reuse-instance -forward-search @tex @line (wslpath -w "@pdf")'
     let g:vimtex_view_general_options_latexmk = '-reuse-instance'
-  Plug 'KeitaNakamura/tex-conceal.vim'
-    set conceallevel=1
-    let g:tex_conceal='abdmg'
-    hi Conceal ctermbg=none
+
+    let g:vimtex_syntax_conceal='accents fancy greek math_bounds math_delimiters math_fracs math_super_sub math_symbols styles cites'
   Plug 'flazz/vim-colorschemes'
   Plug 'itchyny/lightline.vim'
   Plug 'chiendo97/intellij.vim'
@@ -64,6 +63,10 @@
 
   set splitbelow
   set splitright
+
+" Misc
+  set conceallevel=2
+  set concealcursor='n'
 
 " Setup for SumatraPDF
   function! SetServerName()
