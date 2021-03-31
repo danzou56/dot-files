@@ -254,9 +254,9 @@ snippet ^ "supexp" iA
 ^{$1}$0
 endsnippet
 
-priority 102
+priority -1
 context "math()"
-snippet "\((+*?)\)\^" "supexpp" riA
+snippet "\((.*?)\)\^" "supexpp" ri
 {(`!p snip.rv = match.group(1)`)}^{$1}$0
 endsnippet
 
