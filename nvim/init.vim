@@ -8,6 +8,7 @@
     let g:UltiSnipsJumpForwardTrigger = '<tab>'
     let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
   Plug 'vim-syntastic/syntastic'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'tpope/vim-sleuth'
   Plug 'lervag/vimtex'
     let g:tex_flavor='latex'
