@@ -81,6 +81,8 @@
     autocmd FileType tex call SetServerName()
   augroup END
 
+au BufRead,BufNewFile *.tex setlocal textwidth=88
+
 " There's a bug somewhere between nvim and microsoft/terminal with somebody
 " not properly setting the cursor so I always get a block cursor on nvim exit.
 " As a workaround, set guicursor manually to ver-blinkon in all modes on nvim
