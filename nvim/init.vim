@@ -19,7 +19,8 @@
     let g:vimtex_view_general_options_latexmk = '-reuse-instance'
   Plug 'flazz/vim-colorschemes'
   Plug 'itchyny/lightline.vim'
-  Plug 'chiendo97/intellij.vim'
+"  Plug 'chiendo97/intellij.vim'
+  Plug 'danzou56/intellij.vim', {'commit': 'ccd70b8'}
 
   call plug#end()
 
