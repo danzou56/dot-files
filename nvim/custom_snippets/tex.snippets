@@ -186,14 +186,6 @@ snippet ** "cdot" iA
 \cdot 
 endsnippet
 
-snippet phi "phi" iA
-\phi
-endsnippet
-
-snippet perp "perp" iA
-^\perp
-endsnippet
-
 snippet xor "xor" iA
 \oplus
 endsnippet
@@ -232,18 +224,6 @@ snippet "\|(.*?)\>\<(.*?)\|" "ketbraraw" ri
 \op{`!p snip.rv = match.group(1)`}{`!p snip.rv = match.group(2)`}
 endsnippet
 
-snippet "\\bra{(.*?)}\\ket{(.*?)}" "braket" riA
-\ip{`!p snip.rv = match.group(1)`}{`!p snip.rv = match.group(2)`}
-endsnippet
-
-snippet "\\bra{(.*?)}(.*?)\>" "braket2" riA
-\ip{`!p snip.rv = match.group(1)`}{`!p snip.rv = match.group(2)`}
-endsnippet
-
-snippet "\\ket{(.*?)}\\bra{(.*?)}" "ketbra" riA
-\op{`!p snip.rv = match.group(1)`}{`!p snip.rv = match.group(2)`}
-endsnippet
-
 context "math()"
 snippet ul "unline" iA
 \ul{$1}$0
@@ -267,34 +247,34 @@ endsnippet
 
 context "math()"
 snippet () "left( right)" iA
-\left( ${1:${VISUAL}} \right) $0
+\left(${1:${VISUAL}}\right) $0
 endsnippet
 
 snippet lr "left( right)" i
-\left( ${1:${VISUAL}} \right) $0
+\left(${1:${VISUAL}}\right) $0
 endsnippet
 
 snippet lr( "left( right)" i
-\left( ${1:${VISUAL}} \right) $0
+\left(${1:${VISUAL}}\right) $0
 endsnippet
 
 snippet lr| "left| right|" i
-\left| ${1:${VISUAL}} \right| $0
+\left|${1:${VISUAL}}\right| $0
 endsnippet
 
 snippet lr{ "left\{ right\}" i
-\left\\{ ${1:${VISUAL}} \right\\} $0
+\left\\{${1:${VISUAL}}\right\\} $0
 endsnippet
 
 snippet lrb "left\{ right\}" i
-\left\\{ ${1:${VISUAL}} \right\\} $0
+\left\\{${1:${VISUAL}}\right\\} $0
 endsnippet
 
 snippet lr[ "left[ right]" i
-\left[ ${1:${VISUAL}} \right] $0
+\left[${1:${VISUAL}}\right] $0
 endsnippet
 
 snippet lra "leftangle rightangle" iA
-\left<${1:${VISUAL}} \right>$0
+\left<${1:${VISUAL}}\right>$0
 endsnippet
 

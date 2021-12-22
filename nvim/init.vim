@@ -54,7 +54,7 @@
   " syntax enable
 
   set foldmethod=indent
-  set foldlevel=2
+  set foldlevel=99
 
 " Mouse
   set mouse=a
@@ -81,7 +81,7 @@
     autocmd FileType tex call SetServerName()
   augroup END
 
-au BufRead,BufNewFile *.tex setlocal textwidth=88
+au BufRead,BufNewFile *.tex setlocal textwidth=80
 
 " There's a bug somewhere between nvim and microsoft/terminal with somebody
 " not properly setting the cursor so I always get a block cursor on nvim exit.
